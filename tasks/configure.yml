@@ -6,3 +6,4 @@
     owner: mongodb
     group: mongodb
     mode: 0644
+  notify: restart mongod

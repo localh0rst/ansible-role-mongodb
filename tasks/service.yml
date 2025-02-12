@@ -1,0 +1,5 @@
+---
+- name: Enable MongoSB Service
+  systemd:
+    name: mongod
+    enabled: yes
