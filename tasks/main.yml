@@ -1,6 +1,9 @@
 ---
 - name: Include prepare.yml
-  include: prepare.yml
+  include_tasks: prepare.yml
 
 - name: Include install.yml
-  include: install.yml
+  include_tasks: install.yml
+
+- name: Include configure.yml
+  include_tasks: configure.yml

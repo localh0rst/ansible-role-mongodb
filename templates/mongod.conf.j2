@@ -1,0 +1,7 @@
+# mongod.conf - Created by Ansible
+
+{% if mongodb_custom_config_only %}
+{{ mongodb_custom_config |  ansible.builtin.to_nice_yaml }}
+{% else %}
+{{ mongodb_default_config |  ansible.builtin.combine(mongodb_custom_config, recursive: true) }}
+{% endif %}
