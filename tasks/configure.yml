@@ -1,7 +1,7 @@
 ---
 - name: Deploy config
   template:
-    src: mongodb.conf.j2
+    src: mongod.conf.j2
     dest: /etc/mongod.conf
     owner: mongodb
     group: mongodb
