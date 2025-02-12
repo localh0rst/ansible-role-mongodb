@@ -1,0 +1,10 @@
+---
+mongodb_release: 8.0
+mongodb_key: https://pgp.mongodb.com/server-{{ mongodb_repo_release }}.asc
+mongodb_repository: "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu {{ ansible_distribution_release }}/mongodb-org/{{ mongodb_release }} multiverse"
+mongodb_package_requirements: 
+  - gnupg
+  - python3-pymongo
+mongodb_packages:
+  - mongodb-org
+
