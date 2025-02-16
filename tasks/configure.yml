@@ -7,3 +7,9 @@
     group: mongodb
     mode: 0644
   notify: restart mongod
+
+- name: Start mongod
+  service:
+    name: mongod
+    state: started
+    enabled: yes
